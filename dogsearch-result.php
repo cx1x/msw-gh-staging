@@ -95,7 +95,7 @@ $next_page_url = $folder ."/search-result/". $next_page ."/". $search;
             ?>
             <input type="text" class="form-control" id="dog-search-text" placeholder="<?php echo $placeholder; ?>">
             <span class="input-group-btn">
-              <!--<button class="btn btn-default" type="button" id="dog-search-button"><i class="fa fa-search"></i></button>-->
+              <button class="btn btn-default" type="button" id="dog-search-button"><i class="fa fa-search"></i></button>
             </span>
           </div>
           <div class="search-pagination col-xs-12 bg-1a1 no-pad">
