@@ -106,7 +106,7 @@ $_track_name = array(
 						
 							<a href="<?php echo $folder ?>/card/<?=$_datas->dog_details->race_group;?>/<?=$_raceid;?>/<?=$_date;?>" data-type="page-transition">
 							
-								<strong class="head-title pull-left fs-14"><i class="fa fa-chevron-left fs-12"></i> <?=date('h.i', strtotime($_datas->dog_details->race_time));?></strong>
+								<strong class="head-title pull-left fs-14"><i class="fa fa-chevron-left fs-12"></i> <?=date('H.i', strtotime($_datas->dog_details->race_time));?></strong>
 							
 							</a>
 							
