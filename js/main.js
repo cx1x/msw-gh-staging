@@ -134,8 +134,7 @@ jQuery(document).ready(function(event){
 		        });
 				$( "#dog-search-button" ).click(function() {
 				  //alert( $("#dog-search-text").val() );
-				  window.location.href = "/greyhoundbet/search-result/1/" + $("#dog-search-text").val();
-				  
+				  window.location.href = "/greyhoundbet-staging/search-result/1/" + $("#dog-search-text").val();
 				  //$(this).attr("href", "greyhoundbet-staging/search-result/1/" + $("#dog-search-text").val());
 				});
 
