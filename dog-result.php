@@ -314,6 +314,10 @@ $_track_name = array(
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 
+		<script src="<?=$folder;?>/js/moment.js"></script>
+		
+		<script src="<?=$folder;?>/js/bootstrap-datetimepicker.js"></script>
+
 		<script src="js/main.js"></script> <!-- Resource jQuery -->
 
 		<script>

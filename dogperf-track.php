@@ -313,6 +313,7 @@ $_datas = json_decode(races($_track, $_date, $_group));
 		
 		<script src="<?=$folder;?>/js/bootstrap-datetimepicker.js"></script>
 		
+		
 		<script src="<?=$folder;?>/js/main.js"></script> <!-- Resource jQuery -->
 		
 	</body>

@@ -335,6 +335,7 @@ $_track_name_id = array(
 		<script src="<?=$folder;?>/js/moment.js"></script>
 		
 		<script src="<?=$folder;?>/js/bootstrap-datetimepicker.js"></script>
+		
 
 		<script src="<?=$folder;?>/js/main.js"></script> <!-- Resource jQuery -->
 

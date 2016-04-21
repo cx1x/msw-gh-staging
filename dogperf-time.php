@@ -239,6 +239,7 @@ $_datas = json_decode(meeting($_dateParam,'time'));
 		
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="<?=$folder;?>/js/bootstrap.min.js"></script>
+		
 		<script src="<?=$folder;?>/js/moment.js"></script>
 		
 		<script src="<?=$folder;?>/js/bootstrap-datetimepicker.js"></script>
