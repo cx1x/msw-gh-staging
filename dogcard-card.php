@@ -47,6 +47,8 @@ $_datas = json_decode(runners($_raceid,$_date,$_group));
 		<link href="<?=$folder;?>/css/font-awesome.min.css" rel="stylesheet">
 
 		<link href="<?=$folder;?>/css/style.css" rel="stylesheet">
+		
+		<link href="<?=$folder;?>/css/bootstrap-datetimepicker.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -401,6 +403,10 @@ $_datas = json_decode(runners($_raceid,$_date,$_group));
 		
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="<?=$folder;?>/js/bootstrap.min.js"></script>
+		
+		<script src="<?=$folder;?>/js/moment.js"></script>
+		
+		<script src="<?=$folder;?>/js/bootstrap-datetimepicker.js"></script>
 		
 		<script src="<?=$folder;?>/js/main.js"></script> <!-- Resource jQuery -->
 

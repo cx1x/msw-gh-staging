@@ -11,8 +11,10 @@ jQuery(document).ready(function(event){
 	//trigger smooth transition from the actual page to the new one 
 	$('main').on('click', '[data-type="page-transition"]', function(event){
 		event.preventDefault();
+		isAnimating = false;
 		//detect which page has been selected
 		var newPage = $(this).attr('href');
+		// console.log(newPage);
 		//if the page is not already being animated - trigger animation
 		if( !isAnimating ) changePage(newPage, true);
 		firstLoad = true;
@@ -48,7 +50,12 @@ jQuery(document).ready(function(event){
 		isAnimating = true;
 		// trigger page animation
 		$('body').addClass('page-is-changing');
+		
+			loadNewContent(url, bool);
+			newLocation = url;
+			
 		$('.cd-loading-bar').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+		
 			loadNewContent(url, bool);
 			newLocation = url;
 			$('.cd-loading-bar').off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
@@ -64,6 +71,7 @@ jQuery(document).ready(function(event){
 		url = ('' == url) ? 'index.php' : url;
 		var newSection = 'cd-'+url.replace('.php', '');
 		var section = $('<div class="cd-main-content '+newSection+'"></div>');
+		console.log(section);
 
 		section.load(url+' .cd-main-content > *', function(event){
 			// load new content and replace <main> content with the new one

@@ -21,6 +21,9 @@ $_next_race = json_decode(get_next_race($_dateParam, $_current_time));
 
 $_datas = json_decode(races($_track, $_date, $_group));
 
+// echo $_SERVER['REQUEST_URI'];
+// print_r($_SERVER);
+// exit;
 
 ?>
 
