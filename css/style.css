@@ -1,0 +1,1549 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+body {
+  background: #333;
+  color: #ccc;
+  font: 12px/1.4 Arial, Helvetica, sans-serif;
+}
+
+a,
+a:focus,
+a:active {
+  color: #ccc;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+/* Android FA bug */
+i.fa {
+  font-style: none;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #333333; /* Old browsers */
+  background: -moz-linear-gradient(top,  #333333 0%, #111111 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #333333 0%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #333333 0%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+  border-bottom: 1px solid #111;
+  color: #fff;
+  overflow: hidden;
+  padding: 0 5px;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+  background: #333333; /* Old browsers */
+  background: -moz-linear-gradient(top,  #222222 0%, #111111 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #222222 0%,#111111 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #222222 0%,#111111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+  border-bottom: 1px solid #111;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  bottom: 0;
+  border-top: 1px solid #292929;
+  -webkit-box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.75);
+  position: fixed;
+  bottom: 0px;
+  z-index: 100;
+}
+
+footer a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.foot-icon-cards {
+  display: block;
+  height: 34px;
+  width: 100%;
+  background: url(../img/footer-icon-cards.png) center top no-repeat;
+  background-size: 34px 34px;
+}
+
+.foot-icon-results {
+  display: block;
+  height: 34px;
+  width: 100%;
+  background: url(../img/footer-icon-results.png) center top no-repeat;
+  background-size: 34px 34px;
+}
+
+.foot-icon-next {
+  display: block;
+  height: 34px;
+  width: 100%;
+  background: url(../img/footer-icon-next.png) center top no-repeat;
+  background-size: 34px 34px;
+}
+
+footer a:hover {
+  opacity: .7;
+}
+
+/* Main Container */
+.main-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+main .cd-main-content {
+  height: calc(100vh - 50px) !important;
+}
+  
+.search-cont {
+  border-bottom: 1px solid #171717;
+}
+
+.search-box {
+  margin: 8px 0;
+}
+
+.search-pagination .pager{
+  margin: 5px 0 10px;
+}
+
+.search-pagination li{
+  display:inline;
+}
+
+.search-pagination .fa-angle-right{
+  margin-left: 5px;
+}
+
+.search-pagination .fa-angle-left{
+  margin-right: 5px;
+}
+
+.search-box .form-control {
+  color: #bf3900;
+  background-color: #111;
+  border: 1px solid #0d0d0d;
+}
+
+.search-box .form-control:focus {
+  border-color: #0d0d0d !important;
+}
+
+.search-box .btn-default {
+  color: #fff;
+  background: #222;
+  background: -moz-linear-gradient(top,  #333 0%, #222 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #333 0%,#222 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #333 0%,#222 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-color: #141414;
+}
+
+.search-box .btn-default:hover {
+  background: #444;
+  background: -moz-linear-gradient(top,  #444 0%, #333 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #444 0%,#333 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #444 0%,#333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-color: #141414;
+}
+
+.search-box .btn-default:focus {
+  color: #ccc;
+  background: #bf3900;
+  background: -moz-linear-gradient(top,  #bf3900 0%, #802600 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #bf3900 0%,#802600 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #bf3900 0%,#802600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-color: #141414;
+}
+
+.search-pagination .pager li > a,
+.search-pagination .pager li > span {
+  padding: 5px 14px;  
+  background: #333;
+  background: -moz-linear-gradient(top,  #333 0%, #222 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #333 0%,#222 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #333 0%,#222 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border: 1px solid #111;
+  border-radius: 8px;
+}
+
+.page-show {
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.search-pagination .pager .disabled > a,
+.search-pagination .pager .disabled > a:hover,
+.search-pagination .pager .disabled > a:focus,
+.search-pagination .pager .disabled > span {
+  color: #444;
+  background-color: #222;
+  border-color: #333;
+  cursor: not-allowed;
+}
+
+/* Override focus glow */
+textarea:focus, input:focus, .uneditable-input:focus {   
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.1) !important;
+    outline: 0 none !important;
+}
+
+.head-icons {
+  font-size: 20px;
+  text-align: right;
+}
+
+.head-icons a{
+  margin-right: 5px;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.head-icons a:hover {
+  color: #333;
+}
+
+.meeting-header {
+  height: 24px;
+}
+
+.meeting-header strong {
+  line-height: 24px;
+}
+
+.search-result a,
+.meeting-group a {
+  background: #222;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.search-result a:hover,
+.meeting-group a:hover {
+  background: #111;
+}
+
+.link-item {
+  position: relative;
+}
+
+a .link-item {
+  color: #ccc;
+}
+
+.link-item.next-race{
+  border: none;
+}
+
+.link-item strong,
+.link-item span,
+.link-item i,
+.race-meeting i.fa {
+  line-height: 40px;
+}
+
+.header-container,
+.footer-container,
+.link-item,
+.dog-card-expand,
+.dog-card-expand-2,
+.meeting-header {
+  padding: 0 8px;
+}
+
+.race-meeting p,
+.race-meeting i,
+.race-meeting strong,
+.race-meeting span,
+.race-meeting-3 strong,
+.race-meeting-3 i,
+.race-meeting-3 span,
+.race-meeting-2 strong,
+.race-meeting-2 span,
+.race-meeting-2 i ,
+.race-meeting-4 strong,
+.race-meeting-4 span,
+.race-meeting-4 i ,
+.race-meeting-5 strong,
+.race-meeting-5 span,
+.race-meeting-5 i {
+  line-height: 1.2;
+  display: block;
+}
+
+.race-meeting i ,
+.race-meeting-2 i ,
+.race-meeting-3 i,
+.race-meeting-4 i,  
+.race-meeting-5 i  {
+  display: inline-block;
+  color: #666;
+}
+
+.race-meeting {
+  height: 40px;
+}
+
+.race-meeting div,
+.race-meeting-3 div {
+  margin: 6px 0;
+}
+
+.race-meeting-2 div:first-child {
+ /*  margin: 12px 0 0 0; */
+}
+
+.race-meeting-2 .pull-left {
+ margin: 12px 0 0 0; 
+}
+
+
+.race-meeting-2,
+.race-meeting-3 {
+  height: 54px;
+}
+
+.race-meeting-2 i.fa,
+.race-meeting-3 i.fa {
+  line-height: 54px;
+}
+
+.race-time {
+  color: #ccc;
+  height: 54px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 54px;
+}
+
+.race-meeting-2 i.play-icon {
+  color: #c71414;
+  line-height: 1.2;
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.head-clock-wrapper,
+.head-clock-wrapper .carousel {
+  background: url(../img/clock-bg.png) center center repeat-x; 
+  height: 68px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.head-orange{
+  background: url(../img/clock-bg.png) center center repeat-x; 
+}
+
+.head-clock-wrapper .carousel .carousel-indicators {
+  bottom: 0;
+}
+
+.head-clock-wrapper .carousel-content span {
+  text-align: center;
+  font-size: 30px;
+}
+
+.head-clock-wrapper .carousel-control {
+  line-height: 68px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+/**/
+
+.race-meeting-4,.race-meeting-5 {
+  height: 85px;
+  margin: 3px 0 0 0;
+}
+
+.race-time-4{
+  color: #ccc;
+  height: 85px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 85px;
+  
+}
+
+.race-meeting-4 b,.race-meeting-5 b{
+	 width: 30px;
+  display: inline-block; 
+}
+
+.tx-race-1st{
+	font-weight: bold;
+}
+
+.race-fc{
+	background: #222;
+    /* border-bottom: 3px solid #333; */
+    display: block;
+    overflow: hidden;
+	margin-bottom: 0.5%;
+    padding-bottom: 6px;
+}
+
+.race-meeting-4 p{
+  margin-right: 5px; 
+  display: inline-block; 
+  margin-left: 10px;
+}
+
+.race-meeting-5 p{
+  display: inline-block; 
+}
+
+.tb-row span i{
+	line-height: 1.2;
+}
+
+.win-4{
+	margin: 12px 0 0 0;
+	width: 45%;
+    float: left;
+}
+
+.win-5{
+	margin: 12px 0 0 0;
+	width: 50%;
+    float: left;
+}
+
+.win-6{
+	margin: 12px 0 0 0;
+	width: 50%;
+    float: left;
+}
+
+.race-forecast-4{
+    width: 50%;
+	margin-top: 5px;
+}
+
+
+.race-forecast-4 p{
+	margin-right: 5px;
+    display: inline-block;
+	margin-left: 10px;
+}
+
+.race-meeting-4 .fa-chevron-right:before{
+	    line-height: 7.2;
+}
+
+.race-meeting-5 .fa-chevron-right:before{
+	    line-height: ;
+}
+
+.tx-4{
+	    /* width: 3%; */
+    margin: 6px 0 0 0;
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.race-count-4 {
+    width: 41%;
+    float: left;
+}
+
+.statusBox{
+	padding: 10px;
+    text-align: center;
+}
+
+.race-card-4.dog-card, .race-card-4.dog-card-2 {
+    background: #222;
+}
+
+.race-position{
+	line-height: 85px;
+	font-size: 34px;
+	text-align: right;
+}
+
+.race-position small{
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.race-card-4 b{
+	width: 100px;
+	font-size: 18px;
+}
+
+.dog-name-details{
+	display: inline-block;
+}
+
+.meeting-group-2 a {
+  background: #222;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.dog-name{
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.dog-race-group{
+	display: inline-block;
+}
+
+ .dog-race-detail{
+	 display: inline-block;
+	 line-height: 1.2;
+ }
+
+ .dog-col{
+	 width: 50%;
+ }
+ 
+ .hr{
+	 width: 100%;
+	 border-bottom: 1px solid #333;
+	 height: 70%;
+	 display: block;
+	 margin-bottom: 5px;
+ }
+ 
+ .race-meeting-5-i{
+	width: 4%;
+	line-height: 6.2;
+ }
+
+/* Bootstrap Nav recolor */
+
+.nav-tabs {
+  background: #fc9a12 url(../img/clock-bg-3.png) repeat;
+  border-bottom: 3px solid #333;
+}
+
+.nav-tabs > li{
+  margin-bottom: 0px;
+  width: 25%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.nav-tabs li a {
+  color: #ccc;
+  cursor: pointer;
+  background: rgba(0,0,0,.7);
+  font-size: 16px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background: #555555; /* Old browsers */
+  background: -moz-linear-gradient(top,  #555555 0%, #333333 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #555555 0%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #555555 0%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+
+  color: #fff;
+  border-color: #333;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #555555; /* Old browsers */
+  background: -moz-linear-gradient(top,  #555555 0%, #333333 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #555555 0%,#333333 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #555555 0%,#333333 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+
+  color: #fff;
+  border-color: #333;
+}
+
+.nav li:last-child  a, .nav-tabs>li:last-child>a{
+	margin-right: 0px;
+}
+
+/* Dog Numbers Icon */
+
+.num-1 {
+  background: url(../img/num-1.png) no-repeat;
+}
+
+.num-2 {
+  background: url(../img/num-2.png) no-repeat;
+}
+
+.num-3 {
+  background: url(../img/num-3.png) no-repeat;
+}
+
+.num-4 {
+  background: url(../img/num-4.png) no-repeat;
+}
+
+.num-5 {
+  background: url(../img/num-5.png) no-repeat;
+}
+
+.num-6 {
+  background: url(../img/num-6.png) no-repeat;
+}
+
+.dog-icon-16 {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  height: 16px;
+  width: 16px;
+  background-size: 16px 16px;
+  margin: 0;
+}
+
+.dog-icon-28 {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  height: 28px;
+  width: 28px;
+  background-size: 28px 28px;
+}
+
+.dog-form-card {
+  overflow: hidden;
+}
+
+.dog-cards a,
+.dog-cards-2 a {
+  border-bottom: 2px solid #333;
+}
+
+.race-meeting-2.dog-card,
+.race-meeting-2.dog-card-2 {
+  background: #222;
+  float: none;
+}
+
+.race-meeting-2.dog-card div:first-child,
+.race-meeting-2.dog-card-2 div:first-child {
+  margin: 0;
+}
+
+.race-meeting-2.dog-card span,
+.race-meeting-2.dog-card-2 span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.race-meeting-2.dog-card span.sp-button,
+.race-meeting-2.dog-card-2 span.sp-button {
+ background: #141414;
+ border-radius: 2px;
+ box-shadow: 0 -1px 0px #2b2b2b;
+ text-align: center;
+ height: 26px;
+ line-height: 26px;
+ width: 64px;
+ margin: 6px 0;
+}
+
+.race-meeting-2.dog-card span.sp-button p,
+.race-meeting-2.dog-card-2 span.sp-button p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.dog-card-expand {
+  background: #1a1a1a;
+  height: 65px;
+}
+
+.dog-card-expand-2 {
+  background: #1a1a1a;
+  height: auto;
+  display: block;
+  float: none;
+  overflow: hidden;
+}
+
+.dog-card-expand i,
+.dog-card-expand .pull-left span,
+.dog-card-expand .pull-right span,
+.dog-card-expand-2 i,
+.dog-card-expand-2 .pull-left span,
+.dog-card-expand-2 .pull-right span {
+  display: block;
+}
+
+.dog-card-expand .pull-left,
+.dog-card-expand .pull-right,
+.dog-card-expand-2 .pull-left,
+.dog-card-expand-2 .pull-right {
+  margin-top: 10px;
+}
+
+.dog-card-expand .pull-right,
+.dog-card-expand-2 .pull-right {
+  text-align: right;
+}
+
+.dog-card-expand-2 p,
+.dog-card-expand-2 p.pull-right,
+.dog-card-expand-2 p.pull-left {
+  margin: 0;
+}
+
+.dog-card-tb {
+  height: auto;
+  background: none repeat scroll 0% 0% #1A1A1A;
+  overflow: hidden;
+  display: block;
+  padding: 4px 0;
+  font-size: 11px;
+  float: left;
+}
+
+.tb-row {
+  /* display: block; */
+  overflow: hidden;
+  height: auto;
+ /*  float: left; */
+  width: 100%;
+  padding: 0 8px;
+}
+
+.tb-titles {
+  font-weight: 700;
+}
+
+.tb-video,
+.tb-date,
+.tb-track,
+.tb-dis,
+.tb-trp,
+.tb-split,
+.tb-fin,
+.tb-sp,
+.tb-grade,
+.tb-caltm {
+  float: left;
+  margin-right: 1.4%;
+  text-align: center;
+}/* 
+.tb-video {
+  width: 5%;
+} */
+.tb-date {
+  width: 13%;
+  text-align: left;
+}
+.tb-track {
+  width: 10%;
+}
+.tb-dis {
+  width: 10%;
+}
+.tb-trp {
+  width: 9%;
+}
+.tb-split {
+  width: 9%;
+}
+.tb-fin {
+  width: 8%;
+}
+.tb-sp {
+  width: 7%;
+}
+.tb-grade {
+  width: 10.5%;
+}
+.tb-caltm {
+  width: 10.7%;
+}
+
+.dog-card-4 .chart-performance {
+  background: none;
+  overflow: hidden;
+  margin: 0;
+  min-height: 0;
+}
+
+.dog-card-4 .dog-card-tb {
+  padding: 0;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.dog-card-4 .bg-444 {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.dog-card-4 .pedigree-info {
+  margin: 5px 0;
+}
+
+.dog-card-4 .pedigree-info p {
+  margin: 0;
+}
+
+.pedigree-info .pull-right {
+  text-align: right;
+}
+
+.dog-card-4 .chart-performance ul{
+  margin: 0;
+}
+
+.dog-card-4 .chart-performance p{
+  margin: 0;
+}
+
+.dog-card-4 .chart-performance li{
+  display: block;
+  width: 100%;
+  height: 28px;
+  position: relative;
+  padding: 0 50px 0 0;
+  margin-bottom: 14px;
+}
+
+.dog-card-4 .bar-fill{
+  background: none repeat scroll 0% 0% #FA4B00;
+  height: 100%;
+  width: 10%;
+  float: left;
+}
+
+.dog-card-4 .chart-performance ul li span {
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  padding-left: 4px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+/* Predictor */
+.predictor-container {
+  background: url(../img/predictor-bg.png) center top no-repeat;
+  overflow: hidden;
+  width: 100%;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  height: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;  
+}
+
+.predictor-container ul {
+  height: 100%;
+  position: absolute;
+  width: 75%;
+  top: 30%; 
+  
+}
+
+@media screen and (max-width: 2000px) {
+  .predictor-container ul {
+	top: 23%;
+	}
+}
+@media screen and (max-width: 1500px) {
+  .predictor-container ul {
+	top: 28%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+  .predictor-container ul {
+	top: 30%;
+	}
+}
+
+
+.predictor-container ul li{
+  height: 12%;
+  position: relative;
+}
+
+.predictor-container ul li img{
+  position: absolute;
+  width: 25%;
+  left: 0;
+}
+
+.pred-dog-1,
+.pred-dog-2,
+.pred-dog-3,
+.pred-dog-4,
+.pred-dog-5,
+.pred-dog-6 {
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.pred-dog-1 {
+  background: url(../img/dog-1.png) center left no-repeat;
+}
+
+.pred-dog-2 {
+  background: url(../img/dog-2.png) center left no-repeat;
+}
+
+.pred-dog-3 {
+  background: url(../img/dog-3.png) center left no-repeat;
+}
+
+.pred-dog-4 {
+  background: url(../img/dog-4.png) center left no-repeat;
+}
+
+.pred-dog-5 {
+  background: url(../img/dog-5.png) center left no-repeat;
+}
+
+.pred-dog-6 {
+  background: url(../img/dog-6.png) center left no-repeat;
+}
+
+
+/* Tips Table */
+.tb-tips {
+  background: #222;
+}
+
+.tb-tips .tb-row {
+  background: #222;
+  display: block;
+  height: 27px;
+  line-height: 26px;
+  border-bottom: 1px solid #333;
+}
+
+.tb-tips .tb-titles {
+  background: #444;
+  text-transform: uppercase;
+}
+
+.tb-tips .tb-row:first-child {
+  border: none;
+}
+
+.tb-time,
+.tb-selection,
+.tb-1st,
+.tb-2nd,
+.tb-3rd {
+  float: left; 
+  margin-right: 2%;
+  text-align: center;
+}
+.tb-time {
+  width: 20%;
+}
+.tb-selection {
+	/*  width: 46%; */
+  /* text-align: left;
+  vertical-align: bottom; */
+    /* margin: 0px 0px; */
+   /*  display: inline-block;
+    position: relative; */
+	width: 45%;
+    /* text-align: center; */
+	text-align: left;
+    vertical-align: bottom;
+    margin: 3px 0px;
+    display: inline-block;
+    position: relative;
+}
+.tb-1st,
+.tb-2nd,
+.tb-3rd {
+  width: 7%; 
+  /* margin: 12px 0 0 0; */
+  /* float: left; */
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.tx-selection,
+.tx-1st,
+.tx-2nd,
+.tx-3rd {
+  /* float: left; */
+  margin-right: 2%;
+  text-align: center;
+}
+.tx-time {
+  width: 20%;
+}
+.tx-selection {
+ /*  width: 46%; */
+  /* text-align: left;
+  vertical-align: bottom; */
+    /* margin: 0px 0px; */
+   /*  display: inline-block;
+    position: relative; */
+	width: 45%;
+    /* text-align: center; */
+	text-align: left;
+    vertical-align: bottom;
+    margin: 3px 0px;
+    display: inline-block;
+    position: relative;
+}
+.tx-1st,
+.tx-2nd,
+.tx-3rd {
+ /*  width: 3%; */
+  margin: 12px 0 0 0;
+  /* float: left; */
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.other-races {
+  text-align: center;
+}
+
+.post-pick{
+	display: block;
+	width:45%; 
+	float:left;
+}
+
+.race-count{
+	width:50%; 
+	float:left;
+}
+
+@media screen and (max-width: 700px) {
+  .post-pick {
+    visibility: hidden;
+    width: 0%;
+  }
+  .race-count{
+	width:95%; 
+	}
+  .win-4{
+    visibility: hidden;
+    width: 0%;
+  }
+  .win-5{
+	  width: 60%;
+  }
+  .win-6{
+	  width: 40%;
+  }
+  .race-count-4 {
+    width: 95%;
+  }
+  .race-time-4 {
+	font-size: 14px;
+	}
+	
+	.race-position {
+	font-size: 17px;
+	margin-right: 8px;
+	}
+  
+   .race-meeting-5 span .dog-result-details{
+	   display: none;
+   }
+	
+  .dog-color, .dog-sex, .dog-sire-dam, .dog-date-of-birth, .meeting-result-trainer{
+	  display: none;
+	  visibility: hidden;
+	  width: 0%;
+  }
+  
+  .race-meeting-5 span .col3{
+	    margin-top: 21px;
+  }
+	
+}
+
+/* Bar Chart - Dog Stats */
+
+.chart-performance,
+.chart-trap-record,
+.chart-record-class,
+.chart-record-today,
+.chart-recent-trap {
+  margin: 10px 10px 0 10px;
+  background: #222;
+  min-height: 260px;
+  height: auto;
+  border-radius: 4px;
+  padding: 10px 8px;
+}
+
+.dog-stats p,
+.dog-stats h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.dog-stats h4 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.dog-stats ul {
+  margin: 0;
+}
+
+.dog-stats ul li {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  height: 28px;
+  position: relative;
+  padding: 0px 50px 0px 33px;
+}
+
+.dog-stats ul li i {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 28px;
+}
+
+.dog-stats ul li span {
+  position: absolute;
+  top: 0px;
+  width: 50px;
+  padding-left: 4px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.bar-bg {
+  background: #eee;
+  overflow: hidden;
+  display: inline-block;
+  height: 28px;
+  border-radius: 2px;
+  line-height: 28px;
+  color: #333;
+  float: left;
+  position: relative;
+}
+
+.bar-fill {
+  background: #fa4b00;
+  height: 100%;
+  width: 10%;
+  float: left;
+}
+
+.bar-bg.val-100 {
+  width: 100%;
+}
+
+.bar-bg.val-0 {
+  width: 0%;
+}
+
+/* Misc */
+
+.bg-111 {
+  background: #111;
+}
+
+.bg-1a1 {
+  background: #1a1a1a;
+}
+
+.bg-222 {
+  background: #222;
+}
+
+.bg-333 {
+  background: #333;
+}
+
+.bg-444 {
+  background: #444;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.pad-8 {
+  padding: 0 8px;
+}
+
+.pad-5-0 {
+  padding: 5px 0;
+}
+
+.modal-body{
+  color: #e74500;
+}
+
+.anim-cont,
+.predictor-container ul li img{
+	animation: left-animate 4s;
+	-o-animation: left-animate 4s;
+	-ms-animation: left-animate 4s;
+	-moz-animation: left-animate 4s;
+	-webkit-animation: left-animate 4s;
+}
+
+/* From left animation key frames */
+
+@keyframes left-animate {
+  0% { left: -25%; }
+}
+
+@-o-keyframes left-animate {
+  0% { left: -25%; }
+}
+
+@-ms-keyframes left-animate {
+   0% { left: -25%; }
+}
+
+@-moz-keyframes left-animate {
+   0% { left: -25%; }
+}
+
+@-webkit-keyframes left-animate {
+  0% { left: -25%; }
+}
+
+/* Dog Animations */
+
+.anim-cont {
+  width: 100%;
+  height :100%;
+  position: absolute;
+}
+
+#predictor-dog-1 {
+  background: url("../img/dog-1-1.png") no-repeat left center;
+  background-size: 25% 80%;
+  height: 100%;
+}
+
+#predictor-dog-2 {
+  background: url("../img/dog-2-1.png") no-repeat left center;
+  background-size: 25% 80%;
+  height: 100%;
+}
+
+#predictor-dog-3 {
+  background: url("../img/dog-3-1.png") no-repeat left center;
+  background-size: 25% 80%;
+  height: 100%;
+}
+
+#predictor-dog-4 {
+  background: url("../img/dog-4-1.png") no-repeat left center;
+  background-size: 25% 80%;
+  height: 100%;
+}
+
+#predictor-dog-5 {
+  background: url("../img/dog-5-1.png") no-repeat left center;
+  background-size: 25% 80%;
+  height: 100%;
+}
+
+#predictor-dog-6 {
+  background: url("../img/dog-6-1.png") no-repeat left center;
+  background-size: 25% 80%;
+  height: 100%;
+}
+
+/* Disable animations
+
+    .anim-cont {
+      width: 25%;
+      height :100%;
+      position: absolute;
+    }
+    
+    #predictor-dog-6 { 
+      background: url("../img/dog-6-.png") repeat-x left center;
+      background-size: 400% 80%;
+    }
+
+#predictor-dog-1,
+#predictor-dog-2,
+#predictor-dog-3,
+#predictor-dog-4,
+#predictor-dog-5,
+#predictor-dog-6 {
+  height: 100%;
+  animation-name: dogrun;
+  animation-duration: 0.6s;
+  animation-iteration-count: 4;
+  animation-timing-function: steps(4,end);
+  animation-play-state: running;
+  
+  -o-animation-name: dogrun;
+  -o-animation-duration: 0.6s;
+  -o-animation-iteration-count: 4;
+  -o-animation-timing-function: steps(4,end);
+  -o-animation-play-state: running;  
+  
+  -ms-animation-name: dogrun;
+  -ms-animation-duration: 0.6s;
+  -ms-animation-iteration-count: 4;
+  -ms-animation-timing-function: steps(4,end);
+  -ms-animation-play-state: running;
+  
+  -moz-animation-name: dogrun;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-iteration-count: 4;
+  -moz-animation-timing-function: steps(4,end);
+  -moz-animation-play-state: running;
+  
+  -webkit-animation-name: dogrun;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: 4;
+  -webkit-animation-timing-function: steps(4,end);
+  -webkit-animation-play-state: running;
+}
+
+@keyframes dogrun {
+   100% { background-position: 400%; }
+}
+
+@-o-keyframes dogrun {
+   100% { background-position: 400%; }
+}
+
+@-ms-keyframes dogrun {
+   100% { background-position: 400%; }
+}
+
+@-moz-keyframes dogrun {
+   100% { background-position: 400%; }
+}
+
+@-webkit-keyframes dogrun {
+   100% { background-position: 400%; }
+}
+
+End disable animation */
+
+
+/* Hide when mobile version */
+.desk-logo {
+  display: none;
+}
+
+/* Media Queries - Desktop Version */
+@media screen and ( min-width: 1024px ){
+
+  .predictor-container {
+    width: 750px;
+    height: calc(100% - 251px);
+  }
+
+  body {
+    background: url(../img/desktop-hq.jpg) no-repeat center center ; 
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    overflow: hidden;
+  }
+  
+  .desk-logo {
+    background: url(../img/mswph-logo-min.png) no-repeat center top; 
+    height: 137px;
+    width: 100%;
+    display: block;
+  }
+  
+  .cd-main-content {
+    height: 600px;
+    margin-top: 34px;
+  }
+  
+  main {
+    width: 980px;
+    margin: 0 auto;
+  }
+  
+  main .cd-main-content .main-wrapper {
+    background: #1a1a1a;
+    overflow: auto;
+  }
+  
+  main .cd-main-content {
+    height: calc(100vh - 50px);
+  }
+  
+  .main-wrapper {
+    float: right;
+    width: 750px;
+    height: calc(100% - 251px);
+    overflow: auto;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+  }
+
+  header {
+    width: 750px;
+    float: right;
+    right: 0px;
+    top: 137px;
+    position: absolute;
+  }
+  
+  footer {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    position:relative;
+    float: left;
+    width: 230px;
+    padding: 0px;
+    box-shadow: none;
+    margin-top: 0px;
+    height: 174px;
+  }
+
+  footer .col-xs-4 {
+    width: 100%;
+    text-align: left;
+    display: block;
+    transition: all .4s ease;
+  }
+
+  footer .col-xs-4:hover {
+    background: #1a1a1a;
+  }
+  
+  footer .col-xs-4 a:hover {
+    color: #eee;
+  }
+  
+  footer .col-xs-4  span{
+    background-position: center left; 
+    background-size: 42px 42px;
+    width: 54px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  footer .col-xs-4,
+  footer .col-xs-4 a,
+  footer .col-xs-4 a span {
+    height: 58px;
+  }
+
+}
+
+/* MSWPH sidebar embed 292px */
+
+@media screen and ( max-width: 310px ){
+  .race-time {
+    padding: 0 8px;
+    font-size: 15px;
+  }
+  
+  .play-icon.fa.fa-youtube-play {
+    display: none;
+  }
+  
+  .race-meeting-2 .pull-left {
+    margin: 10px 0px 0px;
+  }
+  
+  .nav > li > a {
+    padding: 7px;
+  }
+  
+  .nav-tabs li a {
+    font-size: 14px;
+  }
+  
+  .dog-card-expand {
+    min-height: 80px;
+    height: auto;
+  }
+  
+  .race-meeting-2.dog-card span,
+  .race-meeting-2.dog-card-2 span {
+    font-size: 16px;
+  }
+  
+  .dog-card-tb {
+    font-size: 9px;
+  }
+  
+  #predictor-dog-1,
+  #predictor-dog-2,
+  #predictor-dog-3,
+  #predictor-dog-4,
+  #predictor-dog-5,
+  #predictor-dog-6 {
+  background-size: 25% 62%;
+  }
+    
+  footer a {
+    font-size: 11px;
+  }
+}

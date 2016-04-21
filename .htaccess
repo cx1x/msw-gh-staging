@@ -1,0 +1,29 @@
+
+#<IfModule mod_rewrite.c>
+	Options +FollowSymLinks -MultiViews
+	RewriteEngine on  
+	RewriteBase /greyhoundbet-staging/
+	#RewriteCond %{HTTP_HOST} !mswmedia.net/greyhoundbet/$ [NC]
+	#RewriteRule ^(.*)$ http://mswdogs.ph/$1 [L,R=301]
+	RewriteRule ^dogperf-list index.php [NC,L]
+	RewriteRule ^dogperf-time dogperf-time.php [NC,L]
+	RewriteRule ^result/(.*) result.php?date=$1 [NC,L]
+	RewriteRule ^result-track/(.*)/(.*) result-track.php?track=$1&date=$2 [NC,L]
+	RewriteRule ^fastresult-track/(.*)/(.*) fastresult-track.php?track=$1&date=$2 [NC,L]
+	RewriteRule ^result-card/(.*)/(.*)/(.*) result-card.php?track=$1&race=$2&date=$3 [NC,L]
+	RewriteRule ^fastresult-card/(.*)/(.*)/(.*) fastresult-card.php?track=$1&race=$2&date=$3 [NC,L]
+	RewriteRule ^predictor/(.*)/(.*)/(.*) predictor.php?group=$1&race=$2&date=$3 [NC,L]
+	RewriteRule ^dogs/(.*)/(.*)/(.*)/(.*) dog.php?track=$1&race=$2&date=$3&dog=$4 [NC,L]
+	RewriteRule ^dogs-result/(.*)/(.*)/(.*)/(.*) dog-result.php?track=$1&race=$2&date=$3&dog=$4 [NC,L]
+	RewriteRule ^dogperf-track/(.*)/(.*)/(.*) dogperf-track.php?track=$1&date=$2&group=$3 [NC,L]
+	RewriteRule ^card/(.*)/(.*)/(.*) dogcard-card.php?group=$1&race=$2&date=$3 [NC,L]
+	RewriteRule ^form/(.*)/(.*)/(.*) dogcard-form.php?group=$1&race=$2&date=$3  [NC,L]
+	RewriteRule ^stats/(.*)/(.*)/(.*) dogcard-stats.php?group=$1&race=$2&date=$3  [NC,L]
+	RewriteRule ^tips/(.*)/(.*)/(.*) dogcard-tips.php?group=$1&race=$2&date=$3  [NC,L]
+	RewriteRule ^search-result/(.*)/(.*) dogsearch-result.php?page=$1&search_text=$2  [NC,L]
+	RewriteRule ^dog-career/(.*)/(.*)/(.*) dog-career.php?doguid=$1&page=$2&search_text=$3  [NC,L]
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^xml/(.*) xml/$1.xml  [NC,L]
+#</IfModule>
