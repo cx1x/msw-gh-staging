@@ -21,7 +21,9 @@ jQuery(document).ready(function(event){
 	});
 
 
-
+	$('#dog-search-button').on('click', function(){
+		//alert('yummy');
+	});
 	/*  $(window).bind('beforeunload',function(){
 
 	//save info somewhere
@@ -126,11 +128,15 @@ jQuery(document).ready(function(event){
 					$(this).attr("href", "/greyhoundbet-staging/result/" + selectedDate);
 				});
 					
+				$("#dog-search-text").keyup(function() {
+		            var $th = $(this);
+		            $th.val( $th.val().replace(/[^a-zA-Z ]/g, function(str) { alert('You typed " ' + str + ' ".\n\n Please use only letters.'); return ''; } ) );
+		        });
 				$( "#dog-search-button" ).click(function() {
 				  //alert( $("#dog-search-text").val() );
-				  //window.location.href = "/greyhoundbet/search-result/1/" + $("#dog-search-text").val();
-				  //$(this).attr("href", "/greyhoundbet/search-result/1/" + $("#dog-search-text").val());
-				  $(this).attr("href", "greyhoundbet-staging/search-result/1/" + $("#dog-search-text").val());
+				  window.location.href = "/greyhoundbet/search-result/1/" + $("#dog-search-text").val();
+				  
+				  //$(this).attr("href", "greyhoundbet-staging/search-result/1/" + $("#dog-search-text").val());
 				});
 
 				if( !transitionsSupported() ) isAnimating = false;

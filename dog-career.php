@@ -113,9 +113,15 @@ $_track_name_id = array(
 						</div>
 
 							<?php
-								if (!empty($data['notice'])) echo $data['notice'];
+								if (!empty($data['notice'])) 
+								{
 							?>
-
+								<div class="row">
+									<span><?php echo $data['notice']; ?></span>
+								</div>
+							<?php
+							}
+							?>
 					</div>
 					
 				</header>
@@ -325,6 +331,10 @@ $_track_name_id = array(
 		
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="<?=$folder;?>/js/bootstrap.min.js"></script>
+
+		<script src="<?=$folder;?>/js/moment.js"></script>
+		
+		<script src="<?=$folder;?>/js/bootstrap-datetimepicker.js"></script>
 
 		<script src="<?=$folder;?>/js/main.js"></script> <!-- Resource jQuery -->
 

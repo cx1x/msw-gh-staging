@@ -1160,9 +1160,11 @@ function dog_race_history($dog_id)
 	{
 		//echo $query;
 		//exit;
-		$notice = "Dog History for validation.. ";
+		$notice = "<span class='head-title'> No information has found. </span>";
 	}
 	
+	$dogs_history = array();
+	$dog_info = "";
 	while ($_row = mysqli_fetch_array($_result, MYSQL_ASSOC)) {
 	
 		$dogs_history[] = array(
