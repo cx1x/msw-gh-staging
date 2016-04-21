@@ -21,9 +21,6 @@ $_next_race = json_decode(get_next_race($_dateParam, $_current_time));
 
 $_datas = json_decode(races($_track, $_date, $_group));
 
-// echo $_SERVER['REQUEST_URI'];
-// print_r($_SERVER);
-// exit;
 
 ?>
 
@@ -194,7 +191,7 @@ $_datas = json_decode(races($_track, $_date, $_group));
 											
 												<strong>Race ' . $_race . ' </strong>';
 												
-												echo ($_group == 'TV') ? '<span><i class="play-icon fa fa-youtube-play"></i><i class="">Grade: (' . $_props->grade . ') Dis: ' . $_props->distance_meters . 'M Winr: &pound;' . $_props->prize . '</i></span>' : '<span><i class="">Grade: (' . $_props->grade . ') Dis: ' . $_props->distance_meters . 'M Winr: &pound;' . $_props->prize . '</i></span>';
+												echo ($_group == 'TV') ? '<span><i class="">Grade: (' . $_props->grade . ') Dis: ' . $_props->distance_meters . 'M Winr: &pound;' . $_props->prize . '</i></span>' : '<span><i class="">Grade: (' . $_props->grade . ') Dis: ' . $_props->distance_meters . 'M Winr: &pound;' . $_props->prize . '</i></span>';
 												
 											echo '</div>
 
