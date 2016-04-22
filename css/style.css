@@ -105,9 +105,10 @@ footer a:hover {
 
 /* Main Container */
 .main-wrapper {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 50px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 main .cd-main-content {
