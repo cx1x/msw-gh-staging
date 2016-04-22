@@ -198,7 +198,7 @@ $_track_name = array(
 									</div> 
 
 									<?
-									
+									/*
 									foreach($_datas->race_history AS $_date => $_props){
 									
 										$_history_props = json_decode($_props->properties);
@@ -227,7 +227,64 @@ $_track_name = array(
 											echo '</div>
 										';
 									
+									}*/
+
+									if(empty($_datas->race_history)) //added feature
+									{
+
+										echo '
+
+											<div class="tb-row">
+
+												<div class="tb-date"> No details are available as of the moment </div>
+
+											</div>
+
+										';
+
 									}
+
+									else
+
+									{
+
+
+										foreach($_datas->race_history AS $_date => $_props)
+
+										{
+									
+											$_history_props = json_decode($_props->properties);
+										
+											echo '
+												<div class="tb-row">
+												
+													<div class="tb-date">'.date('dMy', strtotime($_date)).'</div>
+													
+													<div class="tb-track">'.$_track_name[$_track].'</div>';
+													
+													echo (!empty($_history_props->dist)) ? '<div class="tb-dis">'.$_history_props->dist.'m</div>' : '<div class="tb-dis">&nbsp;</div>';
+													
+													echo (!empty($_history_props->trap)) ? '<div class="tb-trp">['.$_history_props->trap.']</div>' : '<div class="tb-trp">&nbsp;</div>';
+													
+													echo (!empty($_history_props->sectional_time)) ? '<div class="tb-split">'.$_history_props->sectional_time.'</div>' : '<div class="tb-split">&nbsp;</div>';
+													
+													echo (!empty($_history_props->position)) ? '<div class="tb-fin">'.$_history_props->position.'</div>' : '<div class="tb-fin">&nbsp;</div>';
+													
+													echo (!empty($_history_props->converted_odds)) ? '<div class="tb-sp">'.$_history_props->converted_odds.'</div>' : '<div class="tb-sp">&nbsp;</div>';
+													
+													echo (!empty($_history_props->grade)) ? '<div class="tb-grade">'.$_history_props->grade.'</div>' : '<div class="tb-grade">&nbsp;</div>';
+													
+													echo (!empty($_history_props->calc_time)) ? '<div class="tb-caltm">'.$_history_props->calc_time.'</div>' : '<div class="tb-caltm">&nbsp;</div>';
+													
+												echo '</div>
+											';
+										
+										}
+
+
+
+									}
+
 									
 									?>
 									

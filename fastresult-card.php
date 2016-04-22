@@ -322,7 +322,7 @@ $_race_time = json_decode(fastresult_race_time($_trackID, $_date));
 													
 														<div class="pull-left">
 														
-															<i class="comment"> ()  </i>
+															<i class="comment">  </i>
 															
 														</div>
 														
