@@ -542,6 +542,7 @@ function result_dog_details($_race_id, $_track_date, $_dog_id){
 
 function result_meeting($_track_date){
 
+
 	$connect = mysqli_connector();
 	
 	$_date = date("Y-m-d");
@@ -571,10 +572,16 @@ function result_meeting($_track_date){
 		WHERE a.track_date = "' . $_track_date . '" AND b.track_date = "' . $_track_date . '" AND c.track_date = "' . $_track_date . '"
 		
 		ORDER BY d.tv DESC, c.race_group, b.race_time DESC';
-	
+
+		//$_q = 'SELECT * FROM '.$_card_meetingTable .' LIMIT 1,1;';
+
 		$_result = $connect->query($_q);
-		
-		if (mysql_num_rows($_result) == 0) { 
+
+		$_test = $_result->num_rows;
+
+		//echo (string)mysql_num_rows($_result);
+
+		if ($_test == 0) { 
 		
 			$_qCards = 'SELECT a.track_date, a.track, a.track_uid, b.race_time, b.race_group, a.number_of_races
 
