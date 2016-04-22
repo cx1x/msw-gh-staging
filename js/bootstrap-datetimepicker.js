@@ -214,7 +214,7 @@
 
                 return [
                     $('<div>').addClass('datepicker-days')
-                        .append($('<table>').addClass('table-condensed')
+                        .append($('<table style="width:100%;">').addClass('table-condensed')
                             .append(headTemplate)
                             .append($('<tbody>'))
                             ),

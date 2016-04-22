@@ -107,6 +107,7 @@ footer a:hover {
 .main-wrapper {
   margin-top: 50px;
   margin-bottom: 50px;
+  padding: 50px;
 }
 
 main .cd-main-content {
@@ -899,7 +900,7 @@ a .link-item {
 
 @media screen and (max-width: 800px) {
   .predictor-container ul {
-	top: 30%;
+	top: 29%;
 	}
 }
 
